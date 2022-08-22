@@ -27,4 +27,16 @@ warmStrategyCache({
 registerRoute(({ request }) => request.mode === 'navigate', pageCache);
 
 // TODO: Implement asset caching
-registerRoute();
+registerRoute(
+  matchCallback,
+  // Resources are requested from both the cache and the network in parallel. 
+  new StaleWhileRevalidate({
+    cacheName,
+    plugins: [
+    // If both statuses and headers are specified, then both conditions must be met for the Response to be considered cacheable.
+      new CacheableResponsePlugin({
+        statuses: [0, 200],
+      }),
+    ],
+  })
+);
