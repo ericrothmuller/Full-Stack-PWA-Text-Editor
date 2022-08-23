@@ -24,14 +24,15 @@ module.exports = () => {
       }),
       new InjectManifest({
         swSrc: './src/sw.js',
-        swDest: 'service-worker.js',
+        swDest: './src/sw.js',
       }),
       new WebpackPwaManifest({
-        name: 'My Progressive Web App',
-        short_name: 'MyPWA',
-        description: 'My awesome Progressive Web App!',
-        background_color: '#ffffff',
-        crossorigin: 'use-credentials', //can be null, use-credentials or anonymous
+        name: 'Full Stack PWA Text Editor',
+        short_name: 'Text Editor',
+        description: 'Full Stack PWA Text Editor',
+        start_url: "/",
+        publicPath: "/",
+        fingerprints: false,
         icons: [
           {
             src: path.resolve('src/assets/icon.png'),
