@@ -32,7 +32,13 @@ module.exports = () => {
         description: 'Full Stack PWA Text Editor',
         start_url: "/",
         publicPath: "/",
-        fingerprints: false
+        fingerprints: false,
+        icons: [
+          {
+            src: path.resolve("./src/images/logo.png"),
+            sizes: [96, 128, 256, 512]
+          },
+        ],
       })
     ],
     module: {
