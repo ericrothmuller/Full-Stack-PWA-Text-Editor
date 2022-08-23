@@ -39,6 +39,9 @@ What things you need to install the software and how to install them.
 * [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 * [Node](https://nodejs.org/en/)
 * [Express](https://www.npmjs.com/package/express)
+* [HtmlWebpackPlugin](https://webpack.js.org/plugins/html-webpack-plugin/)
+* [Webpack PWA Manifest](https://www.npmjs.com/package/webpack-pwa-manifest)
+* [Workbox Webpack Plugin](https://developer.chrome.com/docs/workbox/reference/workbox-webpack-plugin/)
 
 
 ## Demo Video
