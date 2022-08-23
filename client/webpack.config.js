@@ -23,8 +23,8 @@ module.exports = () => {
         title: 'Full Stack PWA Text Editor',
       }),
       new InjectManifest({
-        swSrc: './src/sw.js',
-        swDest: './src/sw.js',
+        swSrc: './src-sw.js',
+        swDest: './src-sw.js',
       }),
       new WebpackPwaManifest({
         name: 'Full Stack PWA Text Editor',
